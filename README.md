@@ -9,7 +9,7 @@ You can add new task, check if it is done or delete it
 HTML, CSS, JavaScript
 
 ## Demo 
-https://paweldzi.github.io/toDoList/
+[https://paweldzi.github.io/toDoList/](https://paweldzi.github.io/todos-list-react/)
 
 # Getting Started with Create React App
 
