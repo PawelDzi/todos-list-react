@@ -5,6 +5,8 @@ You can add new task, check if it is done or delete it
 
 ![gif](https://i.ibb.co/xmKQRhm/Hnet-image.gif)
 
+![gif](https://im2.ezgif.com/tmp/ezgif-2-310320c3ea.gif)
+
 ## Languages
 HTML, CSS, JavaScript
 
