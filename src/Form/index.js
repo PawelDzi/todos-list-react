@@ -1,12 +1,16 @@
 import { useState } from "react";
 import "./style.css";
 
-const Form = ({addNewTask}) => {
+const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        addNewTask(newTaskContent.trim());
+        const trimmedNewTaskContent = newTaskContent.trim();
+        if (trimmedNewTaskContent === "") {
+            return;
+        }
+        addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
     }
 
@@ -17,8 +21,8 @@ const Form = ({addNewTask}) => {
                     className="form__input"
                     type="text"
                     placeholder="Co jest do zrobienia?"
-                    onChange={({target}) => setNewTaskContent(target.value)}
-                    />
+                    onChange={({ target }) => setNewTaskContent(target.value)}
+                />
             </label>
             <label>
                 <button className="form__button ">Dodaj zadanie</button>
