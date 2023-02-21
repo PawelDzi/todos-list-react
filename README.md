@@ -1,3 +1,16 @@
+# Paweł Dzierzbicki - toDoList
+
+## About the application
+You can add new task, check if it is done or delete it
+
+![gif](https://im2.ezgif.com/tmp/ezgif-2-310320c3ea.gif)
+
+## Languages
+HTML, CSS, JavaScript, React, BEM
+
+## Demo 
+[https://paweldzi.github.io/toDoList/](https://paweldzi.github.io/todos-list-react/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
