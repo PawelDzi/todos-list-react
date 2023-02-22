@@ -3,7 +3,7 @@
 ## About the application
 You can add new task, check if it is done or delete it
 
-![gif](https://im2.ezgif.com/tmp/ezgif-2-310320c3ea.gif)
+![gif]https://sendeyo.com/get/d/bc7153d0e9)
 
 ## Languages
 HTML, CSS, JavaScript, React, BEM
