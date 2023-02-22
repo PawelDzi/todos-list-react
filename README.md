@@ -3,6 +3,7 @@
 ## About the application
 You can add new task, check if it is done or delete it
 
+
 ![gif](https://im5.ezgif.com/tmp/ezgif-5-fb025cfac3.webp.gif)
 
 ## Languages
