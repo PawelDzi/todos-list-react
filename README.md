@@ -3,7 +3,7 @@
 ## About the application
 You can add new task, check if it is done or delete it
 
-!([gif]https://s9.gifyu.com/images/todolista175eee91db69df4.gif)
+![gif](https://storage.cloudconvert.com/tasks/040875cb-cc15-4263-9bbd-6556a6cdb359/todolist.webm?AWSAccessKeyId=cloudconvert-production&Expires=1677174208&Signature=cusmvBWLOBk0CFxFwbewSECfk8k%3D&response-content-disposition=inline%3B%20filename%3D%22todolist.webm%22&response-content-type=video%2Fwebm)
 
 ## Languages
 HTML, CSS, JavaScript, React, BEM
