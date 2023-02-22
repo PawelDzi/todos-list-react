@@ -3,7 +3,7 @@
 ## About the application
 You can add new task, check if it is done or delete it
 
-![gif](https://tiny.pl/wn3js.gif)
+![gif](https://tiny.pl/wn3js)
 
 ## Languages
 HTML, CSS, JavaScript, React, BEM
