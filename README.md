@@ -3,7 +3,7 @@
 ## About the application
 You can add new task, check if it is done or delete it
 
-![gif](https://s9.gifyu.com/images/todolista175eee91db69df4.gif)
+![gif](https://gifyu.com/image/SqepX)
 
 ## Languages
 HTML, CSS, JavaScript, React, BEM
