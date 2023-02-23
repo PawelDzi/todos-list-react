@@ -4,7 +4,7 @@
 You can add new task, check if it is done or delete it
 
 
-![](https://ibb.co/rKBXzCw)
+![gif](https://i.ibb.co/LDTscLZ/todolist.gif)
 
 ## Languages
 HTML, CSS, JavaScript, React, BEM
