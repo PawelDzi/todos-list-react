@@ -1,8 +1,9 @@
 import { useState, useRef } from "react";
-import { Blank, Label, BlankInput, BankButton } from "./styled"
+import { Blank, BlankInput, BankButton } from "./styled"
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+    const inputRef = useRef(null);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -12,13 +13,8 @@ const Form = ({ addNewTask }) => {
         }
         addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
-    }
-
-    const inputRef = useRef(null);
-
-    const focusInput = () => {
         inputRef.current.focus();
-    };
+    }
 
     return (
         <Blank
@@ -33,9 +29,7 @@ const Form = ({ addNewTask }) => {
                 />
             </label>
             <label>
-                <BankButton
-                    onClick={focusInput}
-                >
+                <BankButton>
                     Dodaj zadanie
                 </BankButton>
             </label>
