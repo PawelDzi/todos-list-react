@@ -10,7 +10,7 @@ export const theme = {
         camarone: "#006000",
         guardsmanRed: "#cc0202",
         brightRed: "#AA0000",
-        Gallery: "#F0EFEF",
+        gallery: "#F0EFEF",
     },
     breakpoint: {
         mobileMax:767,
