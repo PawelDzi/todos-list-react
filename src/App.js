@@ -7,8 +7,6 @@ import Title from "./Title";
 import Container from "./Container"
 import { useTasks } from "./useTasks";
 
-
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
 
