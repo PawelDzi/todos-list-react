@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-bottom: 1px solid #cacaca;
+    border-bottom: 1px solid ${({theme}) => theme.color.silver};
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
@@ -26,25 +26,25 @@ export const Content = styled.span`
 
 export const Button = styled.button`
     border: none;
-    color: white;
+    color: ${({theme}) => theme.color.white};
     padding: 5px;
     margin: 5px;
     height: 32px;
     width: 32px;
 
     ${({ toggleDone }) => toggleDone && css`
-    background-color: #008000;
+    background-color: ${({theme}) => theme.color.japaneseLaurel};
 
         &:hover{
-            background-color: #006000;
+            background-color: ${({theme}) => theme.color.camarone};
         }
     `}
 
     ${({ toggleRemove }) => toggleRemove && css`
-    background-color: #cc0202de;
+    background-color: ${({theme}) => theme.color.guardsmanRed};
 
         &:hover{
-            background-color: #aa0000aa;
+            background-color: ${({theme}) => theme.color.brightRed};
         }
     `}
 `;

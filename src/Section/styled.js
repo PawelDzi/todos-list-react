@@ -5,12 +5,12 @@ export const Sections = styled.div`
 `;
 
 export const SectionsItem = styled.div`
-    background-color: white;
+    background-color: ${({theme}) => theme.color.white};
     margin: 3px;
     padding: 15px;
 
     ${({ section }) => section && css`
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid ${({theme}) => theme.color.alto};
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 20px;
@@ -18,7 +18,7 @@ export const SectionsItem = styled.div`
         align-items: center;
         padding: 20px;
 
-        @media (max-width: 767px){
+        @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px){
             grid-template-columns: 1fr;
         }
     `}

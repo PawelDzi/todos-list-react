@@ -18,7 +18,8 @@ const Form = ({ addNewTask }) => {
 
     return (
         <Blank
-            onSubmit={onFormSubmit}>
+            onSubmit={onFormSubmit}
+        >
             <label>
                 <BlankInput
                     value={newTaskContent}

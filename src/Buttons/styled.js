@@ -7,22 +7,21 @@ export const Box = styled.div`
 
 export const BoxButton = styled.button`
     background: transparent;
-    color: teal;
+    color: ${({theme}) => theme.color.teal};
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        color: ${({theme}) => theme.color.bondiBlue};
     }
 
     &:disabled {
-        color: #ccc;
+        color: ${({theme}) => theme.color.silver};
     }
 
-    @media (max-width: 767px){
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px){
         flex-basis: 100%;
         margin: 10px;
     }
-
 `;
