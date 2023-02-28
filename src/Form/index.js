@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "./style.css";
+import { useState, useRef } from "react";
+import { Blank, Label, BlankInput, BankButton } from "./styled"
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
@@ -14,20 +14,32 @@ const Form = ({ addNewTask }) => {
         setNewTaskContent("");
     }
 
+    const inputRef = useRef(null);
+
+    const focusInput = () => {
+        inputRef.current.focus();
+    };
+
     return (
-        <form className="form" onSubmit={onFormSubmit}>
+        <Blank
+            onSubmit={onFormSubmit}>
             <label>
-                <input value={newTaskContent}
-                    className="form__input"
+                <BlankInput
+                    value={newTaskContent}
                     type="text"
                     placeholder="Co jest do zrobienia?"
                     onChange={({ target }) => setNewTaskContent(target.value)}
+                    ref={inputRef}
                 />
             </label>
             <label>
-                <button className="form__button ">Dodaj zadanie</button>
+                <BankButton
+                    onClick={focusInput}
+                >
+                    Dodaj zadanie
+                </BankButton>
             </label>
-        </form>
+        </Blank>
     )
 };
 
