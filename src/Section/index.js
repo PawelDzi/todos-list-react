@@ -1,8 +1,8 @@
-import { Sections, SectionsItem, SectionsText } from "./styled";
+import { StyledSections, SectionsItem, SectionsText } from "./styled";
 
-const section = ({ title, body, extraHeaderContent }) => (
+const Section = ({ title, body, extraHeaderContent }) => (
 
-    <Sections>
+    <StyledSections>
         <SectionsItem
             section
         >
@@ -16,7 +16,7 @@ const section = ({ title, body, extraHeaderContent }) => (
         <SectionsItem>
             {body}
         </SectionsItem>
-    </Sections>
+    </StyledSections>
 )
 
-export default section;
+export default Section;

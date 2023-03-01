@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Sections = styled.div`
+export const StyledSections = styled.div`
     margin: 10px 0;
 `;
 

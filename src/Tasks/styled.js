@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-bottom: 1px solid ${({theme}) => theme.color.silver};
+    border-bottom: 1px solid ${({ theme }) => theme.color.silver};
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
@@ -26,25 +26,25 @@ export const Content = styled.span`
 
 export const Button = styled.button`
     border: none;
-    color: ${({theme}) => theme.color.white};
+    color: ${({ theme }) => theme.color.white};
     padding: 5px;
     margin: 5px;
     height: 32px;
     width: 32px;
+`;
 
-    ${({ toggleDone }) => toggleDone && css`
-    background-color: ${({theme}) => theme.color.japaneseLaurel};
-
-        &:hover{
-            background-color: ${({theme}) => theme.color.camarone};
-        }
-    `}
-
-    ${({ toggleRemove }) => toggleRemove && css`
-    background-color: ${({theme}) => theme.color.guardsmanRed};
+export const ToggleDoneButton = styled(Button)`
+    background-color: ${({ theme }) => theme.color.japaneseLaurel};
 
         &:hover{
-            background-color: ${({theme}) => theme.color.brightRed};
+            background-color: ${({ theme }) => theme.color.camarone};
         }
-    `}
+`;
+
+export const ToggleRemoveButton = styled(Button)`
+    background-color: ${({ theme }) => theme.color.guardsmanRed};
+
+        &:hover{
+            background-color: ${({ theme }) => theme.color.brightRed};
+        }  
 `;

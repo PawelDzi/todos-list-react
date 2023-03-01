@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 
 export const useTasks = () => {
 
+  const [hideDone, setHideDone] = useState(false);
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone);
+  };
+
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks")) || []
   );
@@ -45,9 +51,11 @@ export const useTasks = () => {
 
   return {
     tasks,
+    hideDone,
     removeTask,
     toggleTaskDone,
     setAllDone,
     addNewTask,
+    toggleHideDone,
   };
 };
