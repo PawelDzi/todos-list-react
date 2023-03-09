@@ -1,9 +1,14 @@
+import { nanoid } from "@reduxjs/toolkit";
 import { useState, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { addTask } from "../tasksSlice";
 import { Blank, BlankInput, BankButton } from "./styled"
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
+
+    const dispatch = useDispatch();
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -11,7 +16,13 @@ const Form = ({ addNewTask }) => {
         if (trimmedNewTaskContent === "") {
             return;
         }
-        addNewTask(trimmedNewTaskContent);
+
+        dispatch(addTask({
+            content: trimmedNewTaskContent,
+            done: false,
+            id: nanoid(),
+        }))
+
         setNewTaskContent("");
         inputRef.current.focus();
     }
