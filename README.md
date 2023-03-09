@@ -7,7 +7,7 @@ You can add new task, check if it is done or delete it
 ![gif](https://i.ibb.co/LDTscLZ/todolist.gif)
 
 ## Languages
-HTML, CSS, JavaScript, React, BEM
+HTML, CSS, JavaScript, React, BEM, Redux
 
 ## Demo 
 [https://paweldzi.github.io/todos-list-react/](https://paweldzi.github.io/todos-list-react/)
