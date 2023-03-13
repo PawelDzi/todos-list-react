@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
-export const Box = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`;
-
-export const BoxButton = styled.button`
+export const Button = styled.button`
     background: transparent;
     color: ${({theme}) => theme.color.teal};
     border: none;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 50px;
     transition: color 0.3s;
+    float: right;
     font-size: 16px;
 
     &:hover {

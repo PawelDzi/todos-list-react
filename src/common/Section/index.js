@@ -1,15 +1,18 @@
 import { StyledSections, SectionsItem, SectionsText } from "./styled";
 
-const Section = ({ title, body, extraHeaderContent }) => (
+const Section = ({ title, body, extraHeaderContent, sampleTask }) => (
 
     <StyledSections>
         <SectionsItem
             section
         >
-            <SectionsText>
-                {title}
-            </SectionsText>
-            
+
+
+                    {title}
+                    {sampleTask}
+
+
+
             {extraHeaderContent}
         </SectionsItem>
 

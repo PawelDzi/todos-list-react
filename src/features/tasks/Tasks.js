@@ -1,6 +1,7 @@
 import Form from "./Form";
 import TaskList from "./TasksList";
 import Buttons from "./Buttons";
+import SampleTasks from "./SampleTasks";
 import Section from "./../../common/Section";
 import Title from "../../common/Title";
 import { Container } from "../../common/Container/styled"
@@ -12,6 +13,7 @@ function Tasks() {
 
       <Section
         title="Dodaj nowe zadanie"
+        sampleTask={<SampleTasks />}
         body={<Form />}
       />
 
