@@ -6,7 +6,7 @@ import {
   selectIsEveryTaskDone,
   selectHideDone,
   fetchExampleTasks
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { Box, BoxButton } from "./styled";
 
 const Buttons = () => {
