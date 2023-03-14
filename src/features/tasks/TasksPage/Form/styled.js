@@ -10,12 +10,6 @@ export const Blank = styled.form`
     }
 `;
 
-export const BlankInput = styled.input`
-    border: 1px solid ${({theme}) => theme.color.silver};
-    padding: 10px;
-    width: 100%;
-`;
-
 export const BankButton = styled.button`
     background-color: ${({theme}) => theme.color.teal};
     color: ${({theme}) => theme.color.white};
