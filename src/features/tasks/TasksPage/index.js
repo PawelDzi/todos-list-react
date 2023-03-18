@@ -6,7 +6,6 @@ import Search from "./Search";
 import Section from "../../../common/Section";
 import Title from "../../../common/Title";
 import { Container } from "../../../common/Container/styled"
-import { useLocation } from "react-router-dom";
 
 function TasksPage() {
   return (
