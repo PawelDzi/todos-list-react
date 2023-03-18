@@ -11,6 +11,7 @@ export const theme = {
         guardsmanRed: "#cc0202",
         brightRed: "#AA0000",
         gallery: "#f0efef",
+        black: "#000000",
     },
     breakpoint: {
         mobileMax:767,

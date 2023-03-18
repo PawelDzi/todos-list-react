@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     list-style: none;
@@ -47,4 +48,15 @@ export const ToggleRemoveButton = styled(Button)`
         &:hover{
             background-color: ${({ theme }) => theme.color.brightRed};
         }  
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    list-style: none;
+    color: ${({ theme }) => theme.color.teal};
+    transition: color 0.3s;
+
+        &:hover{
+            color: ${({ theme }) => theme.color.bondiBlue};
+        }
 `;

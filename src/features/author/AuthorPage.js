@@ -8,7 +8,6 @@ export default () => (
 
         <Section
             title="Paweł Dzierzbicki"
-            //sampleTask={<>sda</>}
             body={
                 <>
                     <h2>Trochę o mnie</h2>

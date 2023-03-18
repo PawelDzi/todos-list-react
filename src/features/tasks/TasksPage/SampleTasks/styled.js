@@ -22,3 +22,7 @@ export const Button = styled.button`
         margin: 10px;
     }
 `;
+
+export const Load = styled.span `
+    color: ${({theme}) => theme.color.silver};
+`;
